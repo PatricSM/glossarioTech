@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-60: 25 95% 53% / 0.6;
+    --primary-90: 25 95% 53% / 0.9;
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 224 71.4% 4.1%;
+    --muted: 220 13% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 220 13% 91%;
+    --accent-foreground: 224 71.4% 4.1%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 20% 87%;
+    --input: 215 20% 87%;
+    --ring: 25 95% 53%;
+    --radius: 0.5rem;
+    --orange: 25 95% 53%;
+    --orange-foreground: 0 0% 100%;
+    --orange-90: 25 95% 53% / 0.9;
+    --neutral-200: 215 14% 91%;
+    --neutral-800: 215 28% 17%;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-60: 25 95% 53% / 0.6;
+    --primary-90: 25 95% 53% / 0.9;
+    --secondary: 215 28% 17%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 28% 17%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 28% 17%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 28% 17%;
+    --input: 215 28% 17%;
+    --ring: 25 95% 53%;
+    --orange: 25 95% 53%;
+    --orange-foreground: 0 0% 100%;
+    --orange-90: 25 95% 53% / 0.9;
+    --neutral-200: 215 14% 91%;
+    --neutral-800: 215 28% 17%;
+  }
+
+  section[aria-label='Notifications alt+T'] {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .code-block {
+    @apply bg-muted p-4 rounded-md text-sm text-muted-foreground whitespace-pre-wrap break-words;
+  }
+}
