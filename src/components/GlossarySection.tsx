@@ -57,7 +57,7 @@ export const GlossarySection = () => {
   return (
     <section id="glossary" className="container mx-auto px-4 md:px-6 py-8">
       <header className="mb-12 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/60">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/60">
           Glossário Técnico
         </h2>
         <p className="mt-4 text-lg max-w-2xl mx-auto text-muted-foreground md:text-xl">
